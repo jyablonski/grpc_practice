@@ -13,6 +13,9 @@ gRPC is a message exchange format which uses protocol buffers to help you send m
 
 This means the only 3 files I have to build are the `protos/jacobs_grpc.proto`, `jacobs_client.py`, and `jacobs_server.py`
 
+# Proto File
+The .proto file is where you define your gRPC Schema for what's included in the message.  Each field has to be assigned a field type and a field number.  The Type is any data type like string, int32 etc, while the field type is a unique number that are used to identify your messages.  Don't change this after the message type is in use.  Try to use 1 - 15 for these field numbers because that takes 1 byte to encode instead of 2 bytes for numbers 16 - 2047.
+
 # Client
 `jacobs_client.py`
   
