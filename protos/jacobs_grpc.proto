@@ -8,10 +8,12 @@ service jacobs_service {
 
 }
 
-message message_request {
+message message_request {  // you can add comments like this
  string message = 1;
  string requester = 2;
 }
+
+/* or add comments like this */
 
 message message_response {
  string message = 1;
