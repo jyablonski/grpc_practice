@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package jacobs_proto;
+
+service jacobs_service {
+
+ rpc test_message(message_request) returns (message_response) {}
+
+}
+
+message message_request {
+ string message = 1;
+ string requester = 2;
+}
+
+message message_response {
+ string message = 1;
+ string sender = 2;
+}

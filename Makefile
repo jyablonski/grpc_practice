@@ -1,0 +1,1 @@
+-include $(shell curl -ssl -o .jacobs-makefile "https://raw.githubusercontent.com/jyablonski/python_aws/jacob/Makefile"; echo .jacobs-makefile)
